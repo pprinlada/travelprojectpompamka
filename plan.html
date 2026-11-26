@@ -1,0 +1,195 @@
+
+<!doctype html>
+<html lang="th">
+
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>แผนเที่ยวหนึ่งวัน | เที่ยวบ้านเรา</title>
+
+<link rel="stylesheet" href="style.css">
+
+<style>
+/* ตกแต่งเพิ่มเติม โดยใช้สีจาก style.css เดิม */
+
+.plan-intro {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.plan-image {
+    width: 100%;
+    max-width: 750px;
+    margin: 1.5rem auto;
+}
+
+.plan-image img {
+    width: 100%;
+    border-radius: 0.75rem;
+    box-shadow: 0 4px 12px rgba(75, 46, 31, 0.15);
+}
+
+.plan-image figcaption {
+    text-align: center;
+    font-size: 0.9rem;
+    margin-top: 0.75rem;
+}
+
+.plan-list {
+    list-style: none;
+    padding: 0;
+    margin: 1.5rem 0;
+}
+
+.plan-list li {
+    background: #FFF3D7;
+    border: 1px solid #d1e2d7;
+    border-left: 5px solid #99FFCC;
+    border-radius: 0.75rem;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+.plan-list h3 {
+    margin: 0 0 0.5rem;
+}
+
+.plan-list p {
+    margin: 0;
+}
+
+.plan-note {
+    background: #FFCCCC;
+    padding: 1rem;
+    border-radius: 0.75rem;
+    margin: 1.5rem 0;
+}
+
+@media (max-width: 600px) {
+    .plan-image {
+        margin: 1rem auto;
+    }
+}
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<p class="site-name">เที่ยวบ้านเรา</p>
+
+<nav aria-label="เมนูหลัก">
+<ul>
+<li><a href="index.html">หน้าแรก</a></li>
+<li><a href="places.html">ที่เที่ยว</a></li>
+<li><a href="food.html">อาหาร</a></li>
+<li><a href="plan.html" aria-current="page">วางแผนเที่ยว</a></li>
+<li><a href="travel.html">ข้อมูลการเดินทาง</a></li>
+<li><a href="login.html">เข้าสู่ระบบ</a></li>
+</ul>
+</nav>
+
+</header>
+
+<main>
+
+<h1>แผนเที่ยวหนึ่งวัน</h1>
+
+<p class="plan-intro">
+    วางแผนเที่ยวประจวบคีรีขันธ์
+    <br>
+    ชมธรรมชาติ สัมผัสวิถีชุมชน และเลือกเที่ยวตามเส้นทางที่สนใจ
+</p>
+
+<!-- รูปแผนที่ท่องเที่ยว -->
+
+<section class="card">
+
+<h2>แผนที่แนะนำ 10 ที่เที่ยว</h2>
+
+<figure class="plan-image">
+
+<img src="images/maptravel.jpg"
+     alt="แผนที่แนะนำ 10 ที่เที่ยวประจวบคีรีขันธ์">
+
+<figcaption>
+แผนที่แนะนำสถานที่ท่องเที่ยวจังหวัดประจวบคีรีขันธ์
+</figcaption>
+
+</figure>
+
+<p>
+แผนที่นี้รวบรวมสถานที่ท่องเที่ยวทางธรรมชาติ
+และแหล่งเรียนรู้ในจังหวัดประจวบคีรีขันธ์
+เหมาะสำหรับใช้ประกอบการวางแผนเดินทาง
+และเลือกสถานที่ท่องเที่ยวที่สนใจ
+</p>
+
+</section>
+
+<!-- แผนเที่ยวหนึ่งวัน -->
+
+<section class="card">
+
+<h2>ลำดับการเที่ยว</h2>
+
+<ul class="plan-list">
+
+<li>
+<h3>ช่วงเช้า : เดินตลาดชุมชน</h3>
+<p>
+เริ่มต้นวันด้วยการเดินชมตลาดชุมชน
+เลือกซื้ออาหารพื้นถิ่นและของฝาก
+พร้อมสัมผัสวิถีชีวิตของคนในพื้นที่
+</p>
+</li>
+
+<li>
+<h3>ช่วงกลางวัน : รับประทานอาหารพื้นถิ่น</h3>
+<p>
+แวะรับประทานอาหารพื้นถิ่น
+หรือเลือกชิมเครื่องดื่มและอาหารเช้าจากร้านในชุมชน
+ก่อนเดินทางไปยังสถานที่ท่องเที่ยวต่อไป
+</p>
+</li>
+
+<li>
+<h3>ช่วงบ่าย : เที่ยวชมธรรมชาติและจุดชมวิว</h3>
+<p>
+เลือกเที่ยวชมสถานที่จากแผนที่
+เช่น จุดชมวิวเขาโพธิ์ อุทยานแห่งชาติ
+หรือแหล่งท่องเที่ยวทางธรรมชาติที่สนใจ
+พร้อมแวะซื้อของฝากก่อนเดินทางกลับ
+</p>
+</li>
+
+</ul>
+
+<div class="plan-note">
+<strong>คำแนะนำในการเดินทาง</strong>
+<p>
+ควรตรวจสอบระยะทางและเวลาเดินทางของแต่ละสถานที่
+ก่อนออกเดินทาง เพื่อให้สามารถเที่ยวได้อย่างสะดวก
+และเหมาะสมกับเวลาที่มี
+</p>
+</div>
+
+<a class="button" href="travel.html">
+ข้อมูลการเดินทาง
+</a>
+
+</section>
+
+</main>
+
+<footer>
+
+<p>รินลดา-067 | ใบงานฝึกปฏิบัติวิชาการสร้างเว็บไซต์ทางธุรกิจ</p>
+
+</footer>
+
+</body>
+</html>

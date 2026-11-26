@@ -1,0 +1,101 @@
+
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>เข้าสู่ระบบ | เที่ยวบ้านเรา</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <p class="site-name">เที่ยวบ้านเรา</p>
+
+    <nav aria-label="เมนูหลัก">
+        <ul>
+            <li><a href="index.html">หน้าแรก</a></li>
+            <li><a href="places.html">ที่เที่ยว</a></li>
+            <li><a href="food.html">อาหาร</a></li>
+            <li><a href="plan.html">วางแผนเที่ยว</a></li>
+            <li><a href="travel.html">ข้อมูลการเดินทาง</a></li>
+            <li><a href="login.html">เข้าสู่ระบบ</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main class="login-container">
+
+    <div class="login-box">
+
+        <h1>เข้าสู่ระบบ</h1>
+
+        <p class="login-text">
+            ยินดีต้อนรับเข้าสู่เว็บไซต์เที่ยวบ้านเรา
+        </p>
+
+        <form onsubmit="login(event)">
+
+            <label for="username">ชื่อผู้ใช้</label>
+            <input type="text" id="username"
+            placeholder="กรอกชื่อผู้ใช้" required>
+
+            <label for="password">รหัสผ่าน</label>
+
+            <div class="password-group">
+                <input type="password" id="password"
+                placeholder="กรอกรหัสผ่าน" required>
+
+                <button type="button" onclick="showPassword()">
+                    แสดง
+                </button>
+            </div>
+
+            <label for="role">ประเภทผู้ใช้งาน</label>
+
+            <select id="role">
+                <option value="user">สมาชิก (User)</option>
+                <option value="admin">ผู้ดูแลระบบ (Admin)</option>
+            </select>
+
+            <button type="submit" class="login-button">
+                เข้าสู่ระบบ
+            </button>
+
+        </form>
+
+        <p class="login-footer">
+            เว็บไซต์เที่ยวบ้านเรา
+        </p>
+
+    </div>
+
+</main>
+
+<footer>
+    <p>รินลดา-067 | ใบงานฝึกปฏิบัติวิชาการสร้างเว็บไซต์ทางธุรกิจ</p>
+</footer>
+
+<script>
+function showPassword() {
+    const password = document.getElementById("password");
+    const button = document.querySelector(".password-group button");
+
+    if (password.type === "password") {
+        password.type = "text";
+        button.textContent = "ซ่อน";
+    } else {
+        password.type = "password";
+        button.textContent = "แสดง";
+    }
+}
+
+function login(event) {
+    event.preventDefault();
+    alert("นี่คือตัวอย่างหน้าจอเข้าสู่ระบบ ยังไม่ได้เชื่อมต่อฐานข้อมูล");
+}
+</script>
+
+</body>
+</html>

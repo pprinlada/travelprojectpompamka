@@ -1,0 +1,238 @@
+
+<!doctype html>
+<html lang="th">
+
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>อาหารและของฝาก | เที่ยวบ้านเรา</title>
+
+<link rel="stylesheet" href="style.css">
+
+<style>
+/* ตกแต่งเพิ่มเติม โดยใช้สีจาก style.css เดิม */
+
+.food-intro {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.food-container {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1.5rem;
+    margin: 1.5rem 0;
+}
+
+.food-card {
+    background: #FFF3D7;
+    border: 1px solid #d1e2d7;
+    border-radius: 0.75rem;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(75, 46, 31, 0.08);
+    transition: transform 0.3s ease;
+}
+
+.food-card:hover {
+    transform: translateY(-4px);
+}
+
+.food-card img {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    border-radius: 0;
+}
+
+.food-content {
+    padding: 1rem;
+}
+
+.food-content h2 {
+    margin-top: 0;
+    color: #4B2E1F;
+}
+
+.food-content p {
+    line-height: 1.8;
+}
+
+.food-info {
+    background: #FFCCCC;
+    padding: 0.75rem;
+    border-radius: 0.5rem;
+    margin-top: 1rem;
+}
+
+.food-heading {
+    text-align: center;
+    margin: 2rem 0 1rem;
+}
+
+@media (max-width: 600px) {
+    .food-container {
+        grid-template-columns: 1fr;
+    }
+
+    .food-card img {
+        height: 220px;
+    }
+}
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<p class="site-name">เที่ยวบ้านเรา</p>
+
+<nav aria-label="เมนูหลัก">
+<ul>
+<li><a href="index.html">หน้าแรก</a></li>
+<li><a href="places.html">ที่เที่ยว</a></li>
+<li><a href="food.html" aria-current="page">อาหาร</a></li>
+<li><a href="plan.html">วางแผนเที่ยว</a></li>
+<li><a href="travel.html">ข้อมูลการเดินทาง</a></li>
+<li><a href="login.html">เข้าสู่ระบบ</a></li>
+</ul>
+</nav>
+
+</header>
+
+<main>
+
+<h1>อาหารและของฝาก</h1>
+
+<p class="food-intro">
+    แวะชิมอาหารพื้นถิ่นและเลือกซื้อของฝากจากชุมชน
+    <br>
+    สัมผัสเสน่ห์ของกินเมืองประจวบคีรีขันธ์
+</p>
+
+<!-- ส่วนอาหารพื้นถิ่น -->
+
+<h2 class="food-heading">อาหารพื้นถิ่น</h2>
+
+<div class="food-container">
+
+    <!-- ตลาดของฝาก -->
+
+    <section class="food-card">
+
+        <img src="images/market1.jpg"
+             alt="ร้านจำหน่ายอาหารแห้งและของฝากในตลาด">
+
+        <div class="food-content">
+
+            <h2>ตลาดของฝากและอาหารแห้ง</h2>
+
+            <p>
+                แวะชมร้านจำหน่ายอาหารแห้งและของฝาก
+                ที่มีสินค้าหลากหลายให้เลือกซื้อ
+                ทั้งปลาแห้ง อาหารทะเลแปรรูป
+                ขนมขบเคี้ยว และผลิตภัณฑ์จากชุมชน
+            </p>
+
+            <p>
+                เหมาะสำหรับนักท่องเที่ยวที่ต้องการเลือกซื้อ
+                ของฝากกลับบ้าน หรือแวะซื้ออาหารติดไม้ติดมือ
+                ระหว่างเดินทางท่องเที่ยว
+            </p>
+
+            <div class="food-info">
+                <strong>สิ่งที่น่าสนใจ</strong><br>
+                อาหารทะเลแห้ง ขนม และของฝากจากชุมชน
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ต่ายกาแฟโบราณ -->
+
+    <section class="food-card">
+
+        <img src="images/pic2.png"
+             alt="ต่ายกาแฟโบราณและเมนูไข่ลวก">
+
+        <div class="food-content">
+
+            <h2>ต่ายกาแฟโบราณ</h2>
+
+            <p>
+                ร้านกาแฟโบราณที่เหมาะสำหรับแวะพัก
+                ระหว่างเดินเที่ยวหรือเริ่มต้นวันใหม่
+                มีเครื่องดื่มและเมนูอาหารเช้าให้เลือก
+                เช่น กาแฟโบราณ ชา และไข่ลวก
+            </p>
+
+            <p>
+                เมนูไข่ลวกสามารถรับประทานคู่กับเครื่องดื่ม
+                เป็นอาหารเช้าง่าย ๆ ก่อนออกไปเที่ยว
+                สถานที่ต่าง ๆ ในจังหวัดประจวบคีรีขันธ์
+            </p>
+
+            <div class="food-info">
+                <strong>เมนูแนะนำ</strong><br>
+                กาแฟโบราณ ไข่ลวก และเครื่องดื่มต่าง ๆ
+            </div>
+
+        </div>
+
+    </section>
+
+</div>
+
+<!-- ส่วนของฝาก -->
+
+<h2 class="food-heading">ของฝากจากชุมชน</h2>
+
+<section class="card">
+
+    <h3>เลือกซื้อของฝากกลับบ้าน</h3>
+
+    <p>
+        จังหวัดประจวบคีรีขันธ์มีผลิตภัณฑ์ท้องถิ่น
+        ให้เลือกซื้อเป็นของฝากมากมาย
+        โดยเฉพาะอาหารทะเลแปรรูปและขนมจากชุมชน
+    </p>
+
+    <p>
+        นักท่องเที่ยวสามารถแวะเลือกซื้อสินค้า
+        จากร้านค้าท้องถิ่นและตลาดชุมชน
+        เพื่อสนับสนุนผู้ประกอบการในพื้นที่
+    </p>
+
+</section>
+
+<!-- ปุ่มกลับไปหน้าแหล่งท่องเที่ยว -->
+
+<section class="card">
+
+    <h3>เที่ยวต่อให้สนุก</h3>
+
+    <p>
+        อิ่มอร่อยกับอาหารพื้นถิ่นแล้ว
+        อย่าลืมแวะชมสถานที่ท่องเที่ยวที่น่าสนใจ
+        ของจังหวัดประจวบคีรีขันธ์
+    </p>
+
+    <a class="button" href="places.html">
+        กลับไปดูแหล่งท่องเที่ยว
+    </a>
+
+</section>
+
+</main>
+
+<footer>
+
+<p>รินลดา-067 | ใบงานฝึกปฏิบัติวิชาการสร้างเว็บไซต์ทางธุรกิจ</p>
+
+</footer>
+
+</body>
+</html>

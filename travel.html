@@ -1,0 +1,292 @@
+
+<!doctype html>
+<html lang="th">
+
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>ข้อมูลการเดินทาง | เที่ยวบ้านเรา</title>
+
+<link rel="stylesheet" href="style.css">
+
+<style>
+/* ตกแต่งเพิ่มเติมให้เข้ากับ style.css เดิม */
+
+.travel-intro {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+/* รูปภาพด้านบนสุด */
+
+.travel-hero {
+    width: 100%;
+    max-width: 1000px;
+    margin: 1.5rem auto 2rem;
+    overflow: hidden;
+    border-radius: 0.75rem;
+    box-shadow: 0 4px 12px rgba(75, 46, 31, 0.15);
+}
+
+.travel-hero img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    display: block;
+    border-radius: 0;
+}
+
+/* กล่องแหล่งข้อมูลการเดินทาง */
+
+.travel-container {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1rem;
+    margin: 1.5rem 0;
+}
+
+.travel-card {
+    background: #FFF3D7;
+    border: 1px solid #d1e2d7;
+    border-radius: 0.75rem;
+    padding: 1.25rem;
+    box-shadow: 0 4px 10px rgba(75, 46, 31, 0.08);
+}
+
+.travel-card h2 {
+    margin-top: 0;
+}
+
+.travel-card p {
+    line-height: 1.8;
+}
+
+.travel-icon {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #FFCCCC;
+    border-radius: 50%;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.travel-link {
+    display: inline-block;
+    padding: 0.6rem 1rem;
+    margin-top: 0.5rem;
+    background: #99FFCC;
+    color: #4B2E1F;
+    border-radius: 0.35rem;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.travel-link:hover {
+    background: #7DE0B5;
+}
+
+.travel-link:focus-visible {
+    outline: 3px solid #c67400;
+    outline-offset: 3px;
+}
+
+.travel-note {
+    background: #FFF3D7;
+    border-left: 5px solid #99FFCC;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    margin: 1.5rem 0;
+}
+
+/* รองรับโทรศัพท์ */
+
+@media (max-width: 600px) {
+    .travel-hero {
+        width: 92%;
+        margin: 1rem auto 1.5rem;
+    }
+
+    .travel-hero img {
+        height: 220px;
+    }
+
+    .travel-container {
+        grid-template-columns: 1fr;
+    }
+}
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<p class="site-name">เที่ยวบ้านเรา</p>
+
+<nav aria-label="เมนูหลัก">
+<ul>
+<li><a href="index.html">หน้าแรก</a></li>
+<li><a href="places.html">ที่เที่ยว</a></li>
+<li><a href="food.html">อาหาร</a></li>
+<li><a href="plan.html">วางแผนเที่ยว</a></li>
+<li><a href="travel.html" aria-current="page">ข้อมูลการเดินทาง</a></li>
+<li><a href="login.html">เข้าสู่ระบบ</a></li>
+</ul>
+</nav>
+
+</header>
+
+<!-- รูปสะพานปลาไว้บนสุดใต้เมนู -->
+
+<section class="travel-hero">
+
+    <img
+        src="images/sapanpla.jpg"
+        alt="สะพานปลาและจุดชมวิวริมทะเล จังหวัดประจวบคีรีขันธ์"
+    >
+
+</section>
+
+<main>
+
+<h1>ข้อมูลการเดินทาง</h1>
+
+<p class="travel-intro">
+    เตรียมความพร้อมก่อนออกเดินทาง
+    <br>
+    ค้นหาเส้นทาง ตรวจสอบการเดินรถ และวางแผนเที่ยวประจวบคีรีขันธ์
+</p>
+
+<!-- ก่อนออกเดินทาง -->
+
+<section class="card">
+
+<h2>ก่อนออกเดินทาง</h2>
+
+<ul>
+    <li>ค้นชื่อสถานที่จริงในแอปแผนที่</li>
+    <li>ตรวจสอบเวลาเปิดและวันหยุดจากผู้ดูแลสถานที่</li>
+    <li>ตรวจสอบจุดจอดรถและจุดลงรถโดยสาร</li>
+    <li>ตรวจสอบตารางเดินรถและวางแผนเวลาเดินทางล่วงหน้า</li>
+</ul>
+
+<a class="button" href="places.html">
+    ดูแหล่งท่องเที่ยว
+</a>
+
+</section>
+
+<!-- แหล่งข้อมูลการเดินทาง -->
+
+<h2>แหล่งข้อมูลการเดินทาง</h2>
+
+<div class="travel-container">
+
+    <!-- Google Maps -->
+
+    <section class="travel-card">
+
+        <div class="travel-icon">📍</div>
+
+        <h2>Google Maps</h2>
+
+        <p>
+            ใช้ค้นหาสถานที่ท่องเที่ยว ร้านอาหาร
+            และจุดแวะพักในจังหวัดประจวบคีรีขันธ์
+            พร้อมตรวจสอบเส้นทางและระยะเวลาเดินทาง
+        </p>
+
+        <p>
+            <strong>เหมาะสำหรับ:</strong>
+            วางแผนเส้นทางขับรถและค้นหาสถานที่ใกล้เคียง
+        </p>
+
+        <a class="travel-link"
+           href="https://www.google.com/maps/search/?api=1&query=สถานที่ท่องเที่ยว+ประจวบคีรีขันธ์"
+           target="_blank"
+           rel="noopener noreferrer">
+            เปิด Google Maps ↗
+        </a>
+
+    </section>
+
+    <!-- การรถไฟแห่งประเทศไทย -->
+
+    <section class="travel-card">
+
+        <div class="travel-icon">🚆</div>
+
+        <h2>การรถไฟแห่งประเทศไทย</h2>
+
+        <p>
+            ตรวจสอบข้อมูลการเดินทางด้วยรถไฟ
+            ค้นหาขบวนรถ และจองตั๋วโดยสาร
+            ผ่านระบบออนไลน์ของการรถไฟแห่งประเทศไทย
+        </p>
+
+        <p>
+            <strong>เหมาะสำหรับ:</strong>
+            ผู้ที่ต้องการเดินทางด้วยรถไฟมายังจังหวัดประจวบคีรีขันธ์
+        </p>
+
+        <a class="travel-link"
+           href="https://dticket.railway.co.th/"
+           target="_blank"
+           rel="noopener noreferrer">
+            จองตั๋วรถไฟ ↗
+        </a>
+
+    </section>
+
+</div>
+
+<!-- ข้อมูลการเดินทางด้วยรถไฟเพิ่มเติม -->
+
+<section class="card">
+
+    <h2>ตรวจสอบตารางรถไฟ</h2>
+
+    <p>
+        ก่อนเดินทางควรตรวจสอบตารางเวลาเดินรถ
+        และสถานะขบวนรถจากเว็บไซต์การรถไฟแห่งประเทศไทย
+        เพื่อวางแผนเวลาออกเดินทางได้อย่างเหมาะสม
+    </p>
+
+    <a class="button"
+       href="https://www.railway.co.th/SRTTimetable/StationList"
+       target="_blank"
+       rel="noopener noreferrer">
+        ตรวจสอบตารางรถไฟ
+    </a>
+
+</section>
+
+<!-- คำแนะนำเพิ่มเติม -->
+
+<div class="travel-note">
+
+    <strong>คำแนะนำสำหรับนักท่องเที่ยว</strong>
+
+    <p>
+        ควรตรวจสอบข้อมูลการเดินทางก่อนออกจากที่พัก
+        และเผื่อเวลาในการเดินทางระหว่างสถานที่
+        เพื่อให้สามารถเที่ยวได้อย่างสะดวกและปลอดภัย
+    </p>
+
+</div>
+
+</main>
+
+<footer>
+
+<p>รินลดา-067 | ใบงานฝึกปฏิบัติวิชาการสร้างเว็บไซต์ทางธุรกิจ</p>
+
+</footer>
+
+</body>
+</html>

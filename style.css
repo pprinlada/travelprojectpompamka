@@ -1,0 +1,242 @@
+```css
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: system-ui, sans-serif;
+    line-height: 1.65;
+    color: #4B2E1F;        /* สีตัวอักษรที่แสดงผลในส่วนของเนื้อหาเว็บ */
+    background: #FFCCCC;   /* สีพื้นหลังของตัวเว็บ */
+}
+
+header, footer {
+    padding: 1rem;
+    color: #4B2E1F;
+    background:#CCFFFF;   /* สีพื้นหลังของส่วนหัวเว็บและท้ายเว็บ */
+}
+
+.site-name {
+    margin: 0 0 0.5rem;
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav a {
+    display: block;
+    padding: 0.35rem 0.75rem;
+    color: #4B2E1F;   /* สีตัวอักษรบนเมนู */
+    border-radius: 0.35rem;
+}
+
+nav a:hover, nav a[aria-current="page"] {
+    background: #FFFFFF;   /* พื้นหลังของเมนูเมื่อเอาเมาส์ไปวางชี้ */
+    color: #4B2E1F;
+}
+
+a:focus-visible {
+    outline: 3px solid #c67400;
+    outline-offset: 3px;
+}
+
+main {
+    width: min(92%, 56rem);
+    margin: 2rem auto;
+}
+
+.card {
+    margin: 1rem 0;
+    padding: 1rem;
+    border: 1px solid #d1e2d7;
+    border-radius: 0.75rem;
+    background: #FFF3D7;  /* สีพื้นหลังของกรอบ card */
+    color: #4B2E1F;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    border-radius: 0.5rem;
+}
+
+.button {
+    display: inline-block;
+    padding: 0.6rem 1rem;
+    border-radius: 0.35rem;
+    background: #FFBFC5;  /* สีของปุ่ม */
+    color: #4B2E1F;
+    text-decoration: none;
+}
+
+
+/* หน้าการเข้าสู่ระบบ */
+
+.login-container {
+    min-height: 75vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+    background: #FFCCCC;
+}
+
+.login-box {
+    width: 100%;
+    max-width: 420px;
+    background: #ffffff;
+    padding: 35px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+}
+
+.login-box h1 {
+    text-align: center;
+    color: #4B2E1F;
+    margin-bottom: 10px;
+}
+
+.login-text {
+    text-align: center;
+    color: #4B2E1F;
+    margin-bottom: 30px;
+}
+
+.login-box label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #4B2E1F;
+}
+
+.login-box input,
+.login-box select {
+    width: 100%;
+    padding: 13px;
+    margin-bottom: 20px;
+    border: 1px solid #FFCCCC;
+    border-radius: 8px;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+.password-group {
+    display: flex;
+    gap: 8px;
+}
+
+.password-group input {
+    flex: 1;
+    min-width: 0;
+}
+
+.password-group button {
+    height: 44px;
+    padding: 0 15px;
+    background: #FFCCCC;
+    color: #4B2E1F;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.login-button {
+    width: 100%;
+    padding: 14px;
+    background: #FFCCCC;
+    color: #4B2E1F;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.login-button:hover {
+    background: #F5AAAA;
+}
+
+.login-footer {
+    text-align: center;
+    color: #4B2E1F;
+    font-size: 13px;
+    margin-top: 25px;
+}
+
+
+/* ส่วนภาพสไลด์ */
+
+.slideshow {
+    width: 100%;
+    max-width: 1000px;
+    height: 400px;
+    margin: 20px auto;
+    overflow: hidden;
+    border-radius: 12px;
+}
+
+.slides {
+    display: flex;
+    width: 500%;
+    height: 100%;
+    animation: slideMove 20s infinite;
+}
+
+.slides img {
+    width: 20%;
+    min-width: 20%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border-radius: 0;
+}
+
+@keyframes slideMove {
+    0%, 16% {
+        transform: translateX(0);
+    }
+
+    20%, 36% {
+        transform: translateX(-20%);
+    }
+
+    40%, 56% {
+        transform: translateX(-40%);
+    }
+
+    60%, 76% {
+        transform: translateX(-60%);
+    }
+
+    80%, 96% {
+        transform: translateX(-80%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.slideshow-heading {
+    text-align: center;
+    margin: 20px 0;
+    color: #4B2E1F;
+}
+
+/* รองรับโทรศัพท์ */
+
+@media (max-width: 600px) {
+    .slideshow {
+        height: 220px;
+    }
+}
+```
